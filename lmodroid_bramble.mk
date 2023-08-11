@@ -10,6 +10,7 @@ $(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bramble/aosp_bramble.mk)
+$(call inherit-product, device/google/redbull/lmodroid_common.mk)
 
 include device/google/bramble/device-lineage.mk
 
@@ -24,8 +25,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=bramble \
-    PRIVATE_BUILD_DESC="bramble-user 13 TQ2A.230505.002 9891397 release-keys"
+    PRIVATE_BUILD_DESC="bramble-user 13 TQ3A.230705.001 10216780 release-keys"
 
-BUILD_FINGERPRINT := google/bramble/bramble:13/TQ2A.230505.002/9891397:user/release-keys
+BUILD_FINGERPRINT := google/bramble/bramble:13/TQ3A.230705.001/10216780:user/release-keys
 
 $(call inherit-product, vendor/google/bramble/bramble-vendor.mk)

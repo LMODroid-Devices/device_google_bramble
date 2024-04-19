@@ -5,18 +5,18 @@
 #
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bramble/aosp_bramble.mk)
-$(call inherit-product, device/google/redbull/lineage_common.mk)
+$(call inherit-product, device/google/redbull/lmodroid_common.mk)
 
 include device/google/bramble/device-lineage.mk
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4a (5G)
-PRODUCT_NAME := lineage_bramble
+PRODUCT_NAME := lmodroid_bramble
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
